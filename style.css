@@ -1,0 +1,45 @@
+:root {
+    --brimerry-color: #99004d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif, serif;
+    font-size: 20px;
+    line-height: 0.5;
+}
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.header, .footer {
+    background-color: var(--brimerry-color);
+    color: white;
+}
+@media (min-width: 1000px) {
+    .gallsContainer {
+        display: flex;
+flex-direction: row;    
+    }
+}
+.header, .content,  .footer {
+    padding: 15px;
+}
+.gall {
+    height: 300px;
+}
+@media (max-width: 1000px) {
+    .gall {
+        width: 100%;
+    }
+}
+@media (min-width: 1000px) {
+    .gall {
+        width: calc(96%/3);
+    }
+}
